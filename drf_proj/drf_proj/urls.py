@@ -21,5 +21,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api-auth/', include('rest_framework.urls')),
     path('',include('drf_app.urls')),
-    path('student',include('drf_app.urls'))
+    path('student',include('drf_app.urls')),
+    path('drink',include('drf_app.urls')),
+    path('drink/<int:id>',include('drf_app.urls'))
 ]
